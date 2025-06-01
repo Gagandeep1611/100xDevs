@@ -50,4 +50,25 @@ app.listen(port, function() {
     console.log(`Example app listening to port ${port}`);
 })
 
-//Third code - Fetch
+//Bash commands 
+
+/* 
+pwd = print working directory
+cd = change directory 
+cd .. to go back one dir
+cd ../.. to go back two dirs 
+cd to go to root 
+cd (either absolute or relative address)
+ls = lists all the contents in the current directory. 
+mkdir to make directories
+touch to create a file. 
+nano also creates a file and also lets you edit existing files in the terminal itself. 
+cat prints the contents of a file.
+vi also lets you edit files (press esc :q! to exit the vi editor.)
+mv lets you move files from one directory to another
+cp copies files
+use cp -r to do recursive copying
+Node will let you run js in your command line. 
+npm is node package manager
+*/
+
