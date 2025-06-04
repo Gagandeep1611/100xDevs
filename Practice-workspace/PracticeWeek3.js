@@ -11,7 +11,7 @@ app.post("/checkString", function(req, res){
 
     const str = req.body;
     const response = schema.safeParse(str);
-
+  
     if(!response.success){
         res.json({
             message: "That aint no array of string bro."
