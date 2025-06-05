@@ -15,7 +15,7 @@ const User = mongoose.model("Users", {
 app.post("/signup", async function(req, res){
     const name = req.body.name;
     const email = req.body.email;
-    const password = req.body.password;
+    const password = req. body.password;
 
     const existingUser = await User.findOne({ email });
     if (existingUser) {
