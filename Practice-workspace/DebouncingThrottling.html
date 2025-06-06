@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+        First number: <input oninput="doSum()" type="text" id="fnum"><br>
+        Second number: <input oninput="doSum()" type="text" id="snum"><br>
+        <p id="result"></p>
+    <script>
+        async function doSum(){
+            const a = document.getElementById("fnum").value;
+            const b = document.getElementById("snum").value;
+            const response = await fetch("http://localhost:3000/add?a="+a+"&b="+b)
+            const ans = await response.text();
+            document.getElementById("result").innerHTML = "Sum is "+ ans;
+        }
+    </script>
+</body>
+</html>

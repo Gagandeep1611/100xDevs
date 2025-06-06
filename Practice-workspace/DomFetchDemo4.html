@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+        First number: <input oninput="debouncePopulateDiv()" type="text" id="fnum"><br>
+        Second number: <input oninput="debouncePopulateDiv()" type="text" id="snum"><br>
+        <p id="result"></p>
+    <script>
+        let timeout;
+        function debouncePopulateDiv(){
+            clearTimeout(timeout); //clears clock if another call for debouncePopulateDiv is there. 
+            timeout = setTimeout(function(){ //after clearing the old clock, starts the new one here which creates throttling.
+                doSum();
+            },1000);
+        }
+        async function doSum(){
+            const a = document.getElementById("fnum").value;
+            const b = document.getElementById("snum").value;
+            const response = await fetch("http://localhost:3000/add?a="+a+"&b="+b)
+            const ans = await response.text();
+            document.getElementById("result").innerHTML = "Sum is "+ ans;
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- Throttling means not using buttons and sending api requests as soon as data is entered.  -->
+ <!-- debouncing means the requests are not sent as soon as we type but waits for a few seconds so that
+  we could complete our input.  
+  -->
