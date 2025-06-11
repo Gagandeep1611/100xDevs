@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-
+let counter = 4;
 function App() {
   const [todos, setTodos] = useState([
   {
@@ -21,7 +21,7 @@ function App() {
 ])
 function addTodo(){
   setTodos([...todos,{
-    id: 4,
+    id: counter++,
     title: Math.random(),
     description: Math.random()
   }])
@@ -40,7 +40,7 @@ function RenderTodo({todos}){
   return (
     <>
       {todos.map((todos) => (
-          <Todo title = {todos.title} description={todos.description}/>
+          <Todo key={todos.id} title = {todos.title} description={todos.description}/>
       ))}
     </>
   )

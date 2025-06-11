@@ -1,0 +1,23 @@
+Side-effects:
+ any operation that reaches outside of the functional scope of a React component. 
+These operations can affect other components, interact with the browser, or perform an asynchronous
+data fetching. 
+
+Hooks: hooks 
+are the inbuilt react features that let you use state and other react features without 
+writing a class. They enable functional components to have access to stateful logic and lifecycle features. 
+which were previously only possible through class components. 
+common hooks: 
+1. useState
+2. useEffect
+3. useCallback
+4. useMemo
+5. useRef
+6. useContext
+
+useEffect: 
+allows you to perform sideeffects in functional components. Side effects are operations that can 
+affect other components or cant be done during rendering such as data fetching, subscriptions, 
+or manually changing the DOM. Basically a function to run only on first load/render and never render/run it 
+again unless in specific conditions. 
+
