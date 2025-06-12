@@ -21,3 +21,14 @@ affect other components or cant be done during rendering such as data fetching, 
 or manually changing the DOM. Basically a function to run only on first load/render and never render/run it 
 again unless in specific conditions. 
 
+useMemo: 
+means remembering some output given an input and not computing it again. Whenever a value changes, the render and the logic
+runs on the fly.  while in useeffect, the value first changes and then the render happens. 
+
+useCallback: 
+is a hook, used to memoize functions to help optimizing performance of an application, especially in cases involving 
+chaild components that rely on reference equality to prevent unnecessary renders. 
+
+ useRef: gives access to DOM elements.  
+
+

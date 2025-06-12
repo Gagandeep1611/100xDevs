@@ -21,6 +21,15 @@ app.get("/todos",async function(req, res){
     })
 })
 
+app.get("/gettodo",async function(req, res){
+    const id = req.query.id;
+    const singleTodo = await todo.findOne({ _id: id });
+
+    res.json({
+        singleTodo
+    })
+})
+
 app.post("/todo", async function(req, res){
     const createPayload = req.body;
     const parsedPayload = createToDo.safeParse(createPayload);
