@@ -1,0 +1,28 @@
+What are routes: 
+react-router-dom, fetching/rendering new page as you click or go to a different website extension. 
+
+
+useNavigate hook lets you navigate from one route to another. You cannot use useNavigate outsite browser router. 
+
+
+What is lazy loading:
+When we load, entire bundle including the jsx and html files comes back all at once and then 
+client side routing is done. 
+load only the code thats needed as per the page that the user is on. 
+ 
+Suspense is used to show something till the original component loads. 
+
+Prop drilling: passing down values manually from a closest common ancestor. 
+
+ContextAPI: helps in overcoming prop drilling and make the syntax cleaner. 
+
+State management library(Recoil, Redux and Zustand): overcomes the shortcomings of state management library i.e, rerendering not needed components. 
+it is a cleaner way to store the state of your app.
+
+Recoil: 
+Atom: smallest unit of state. can be defined outsite the component and teleported to anywhere.     
+
+
+Selector: a selector is a piece of derived state. you can think of derived state as the output of passing state to a pure function 
+that derives a new value from the said state. 
+use useMemo whenver you need a value to desire based on some dependency. 
