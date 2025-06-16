@@ -1,0 +1,8 @@
+Tailwind: 
+Things to know
+    1. Flex
+    2. Grids
+    3. Responsiveness
+    4. background color, text color, hover
+
+Components are reusable chunks of codes. 
