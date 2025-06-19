@@ -1,0 +1,82 @@
+1. Basics
+What is Tailwind? Utility-first CSS
+
+Installing Tailwind (CDN and PostCSS method via Vite/CRA)
+
+Tailwind config file (tailwind.config.js)
+
+Purge/Content settings
+
+2. Utility Classes
+Layout: container, box-border, display, position, z-index
+
+Spacing: margin, padding, gap
+
+Sizing: width, height, max-w, min-h, etc.
+
+Flexbox: flex, justify-*, items-*, flex-wrap
+
+Grid: grid, grid-cols-*, col-span-*, gap-*
+
+3. Styling
+Typography: text-*, font-*, leading, tracking
+
+Colors: bg-*, text-*, border-*
+
+Borders & Radius: border, rounded
+
+Shadows: shadow-*
+
+Backgrounds & Gradients
+
+Transitions & Animations: transition, duration, ease
+
+4. Responsiveness
+Breakpoints: sm, md, lg, xl, 2xl
+
+Responsive design with utility classes
+
+5. States and Variants
+Hover, Focus, Active, Disabled: hover:, focus:, etc.
+
+Dark Mode: dark:
+
+Group & Peer modifiers
+
+6. Customizations
+Extending theme (theme.extend)
+
+Adding custom colors, spacing, fonts
+
+Plugins (forms, typography, aspect-ratio)
+
+7. Component Composition
+Reusable components (e.g. buttons, cards, navbars)
+
+Combining utilities efficiently
+
+Using @apply in custom CSS
+
+8. Real Projects
+Responsive navbar with hamburger
+
+Cards grid layout
+
+Forms with validation styling
+
+Dashboard or portfolio layout
+
+9. Integration
+With React, Next.js, Vue
+
+Using Tailwind with component libraries (e.g., Headless UI, DaisyUI)
+
+10. Best Practices
+Naming conventions (no BEM)
+
+Avoid deep nesting
+
+Clean utility usage
+
+Performance tuning (purge unused styles)
+

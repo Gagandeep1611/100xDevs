@@ -1,0 +1,2 @@
+Basics.ts: contains basics of TypeScript, arrays, interfaces and types
+ts-react-demo: just uses interfaces in a react project. 
